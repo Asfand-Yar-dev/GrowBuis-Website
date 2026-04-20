@@ -88,10 +88,10 @@
   --popover-foreground: 0 0% 98%;
   --popover-border: 120 4% 15%;
 
-  --primary: 140 28% 36%; /* Muted growth green */
-  --primary-foreground: 0 0% 98%;
+  --primary: 220 90% 56%; /* Rich electric blue */
+  --primary-foreground: 0 0% 100%;
 
-  --secondary: 43 74% 66%; /* Soft gold */
+  --secondary: 36 90% 54%; /* Warm amber-gold */
   --secondary-foreground: 120 4% 5%;
 
   --muted: 120 4% 15%;
@@ -104,27 +104,27 @@
   --destructive-foreground: 0 0% 98%;
 
   --input: 120 4% 20%;
-  --ring: 140 28% 36%;
+  --ring: 220 90% 56%;
   
-  --chart-1: 140 28% 36%;
-  --chart-2: 43 74% 66%;
-  --chart-3: 140 20% 50%;
-  --chart-4: 43 50% 50%;
+  --chart-1: 220 90% 56%;
+  --chart-2: 36 90% 54%;
+  --chart-3: 220 70% 70%;
+  --chart-4: 36 70% 65%;
   --chart-5: 120 4% 40%;
 
   --sidebar: 120 4% 7%;
   --sidebar-foreground: 0 0% 98%;
   --sidebar-border: 120 4% 15%;
-  --sidebar-primary: 140 28% 36%;
-  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-primary: 220 90% 56%;
+  --sidebar-primary-foreground: 0 0% 100%;
   --sidebar-accent: 120 4% 15%;
   --sidebar-accent-foreground: 0 0% 98%;
-  --sidebar-ring: 140 28% 36%;
+  --sidebar-ring: 220 90% 56%;
 
   --app-font-sans: 'DM Sans', sans-serif;
   --app-font-display: 'Plus Jakarta Sans', sans-serif;
   
-  --radius: 0.25rem;
+  --radius: 0.75rem;
   
   --shadow-2xs: 0px 2px 0px 0px rgba(0,0,0,0.5);
   --shadow-xs: 0px 2px 0px 0px rgba(0,0,0,0.5);
