@@ -11,6 +11,7 @@ import {
   BarChart3,
   ArrowRight
 } from "lucide-react";
+import servicesDashboard from "@/assets/services-dashboard.png";
 
 const services = [
   {
@@ -66,6 +67,28 @@ export default function Services() {
             <p className="text-xl text-muted-foreground leading-relaxed">
               We don't offer off-the-shelf packages. We deploy specific strategic capabilities to solve complex acquisition and growth challenges.
             </p>
+          </motion.div>
+
+          {/* Dashboard image banner */}
+          <motion.div
+            className="mb-20 rounded-2xl overflow-hidden border border-border relative"
+            style={{ height: "320px" }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <img
+              src={servicesDashboard}
+              alt="Marketing analytics dashboard"
+              className="w-full h-full object-cover object-top"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/70 to-transparent" />
+            <div className="absolute bottom-8 left-8">
+              <div className="text-sm text-primary font-medium tracking-widest uppercase mb-2">Real-time intelligence</div>
+              <div className="text-2xl font-bold">Every campaign, fully tracked.</div>
+            </div>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -1,6 +1,7 @@
 import { RootLayout } from "@/components/layout/RootLayout";
 import { motion } from "framer-motion";
 import { Users, Award, Shield, Zap } from "lucide-react";
+import officeImg from "@/assets/about-office.png";
 
 export default function About() {
   return (
@@ -27,12 +28,15 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-              <div className="absolute inset-0 flex items-center justify-center p-12">
-                <div className="w-full h-full border border-primary/20 rounded-xl bg-background/50 backdrop-blur-sm p-8 flex flex-col justify-end">
-                  <div className="text-4xl font-display font-bold text-foreground mb-2">Est. 2018</div>
-                  <div className="text-primary font-medium">Over a half decade of engineered growth</div>
-                </div>
+              <img
+                src={officeImg}
+                alt="GrowBuis Agency Office"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-8">
+                <div className="text-4xl font-display font-bold text-foreground mb-2">Est. 2018</div>
+                <div className="text-primary font-medium">Over a half decade of engineered growth</div>
               </div>
             </motion.div>
             

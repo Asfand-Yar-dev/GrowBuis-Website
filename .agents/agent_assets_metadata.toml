@@ -1,0 +1,32 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "-kbmD2-j1CjR6ANHWzzqW"
+uri = "file://artifacts/growbuis/src/assets/hero-bg.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "wSwfXYw7PfoR-5XwnCnVV"
+uri = "file://artifacts/growbuis/src/assets/methodology-visual.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "NNX-v00DgN0DNY-NePYDr"
+uri = "file://artifacts/growbuis/src/assets/about-office.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "qyhOWY39x-Ej9DI24zow-"
+uri = "file://artifacts/growbuis/src/assets/services-dashboard.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "PJb02cLGHdnPmlaG6A6qF"
+uri = "file://artifacts/growbuis/src/assets/results-hero.png"
+type = "image"
+title = "generated_image"

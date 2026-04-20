@@ -3,16 +3,23 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowRight, BarChart3, Target, TrendingUp, CheckCircle2 } from "lucide-react";
+import heroBg from "@/assets/hero-bg.png";
+import methodologyImg from "@/assets/methodology-visual.png";
 
 export default function Home() {
   return (
     <RootLayout>
       {/* Hero Section */}
       <section className="relative py-24 lg:py-32 overflow-hidden">
-        {/* Abstract background elements */}
-        <div className="absolute top-0 right-0 -z-10 w-full h-full opacity-20 pointer-events-none">
-          <div className="absolute top-[-10%] right-[-5%] w-[50%] h-[50%] rounded-full bg-primary blur-[120px]" />
-          <div className="absolute bottom-[-10%] left-[-5%] w-[40%] h-[40%] rounded-full bg-secondary blur-[100px]" />
+        {/* Hero background image */}
+        <div className="absolute inset-0 -z-10">
+          <img
+            src={heroBg}
+            alt=""
+            className="w-full h-full object-cover object-center"
+            style={{ opacity: 0.28 }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent" />
         </div>
 
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
@@ -186,9 +193,12 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-40 mix-blend-overlay"></div>
-              {/* Fallback pattern if image fails */}
-              <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+              <img
+                src={methodologyImg}
+                alt="Team strategy session"
+                className="absolute inset-0 w-full h-full object-cover opacity-60"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/30 to-transparent"></div>
               
               <div className="relative z-10 p-8 glassmorphism bg-background/60 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl max-w-sm w-full mx-auto">
                 <div className="flex items-center justify-between mb-6">
