@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "GrowBuis - Digital Marketing Agency"
+version = "1.0.0"
+id = "artifacts/growbuis"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22326
+
+[services.development]
+run = "pnpm --filter @workspace/growbuis run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/growbuis", "run", "build" ]
+publicDir = "artifacts/growbuis/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22326"
+BASE_PATH = "/"

@@ -1,0 +1,84 @@
+Professional Prompt for GrowBuis Website (Futuristic Digital Marketing Agency)
+
+Create a high-end, futuristic yet professional website for GrowBuis, a real digital marketing agency. The website must present the agency as modern, results-driven, and premium, while avoiding any generic AI-generated look.
+
+1. Website Structure (5 Pages)
+
+Design and develop a clean, structured 5-page website:
+
+Home
+Strong, bold hero section with clear value proposition
+Tagline focused on growth, results, and performance marketing
+Smooth scroll experience with modern animations
+Sections for services preview, key results, and CTA
+About
+Agency story and mission
+Position GrowBuis as a serious, professional brand
+Add credibility elements (experience, approach, workflow)
+Services
+Clearly showcase digital marketing services ONLY:
+Social Media Marketing
+Paid Advertising (Meta/Google Ads)
+SEO
+Content Strategy
+Lead Generation
+Each service should have its own section with:
+Short explanation
+Value/benefits
+Visual support (icons or images)
+Case Studies / Results
+Show growth metrics (e.g., leads, ROI, engagement)
+Use charts, numbers, or visual highlights
+Make results feel real and data-driven
+Contact
+Clean CTA (Book Consultation / Get Started)
+WhatsApp integration for direct communication
+Simple, professional form layout
+2. Visual & Design Direction (Critical)
+Overall Style
+Futuristic, but grounded in real business design
+Clean, structured, and premium—not experimental or flashy
+Strict Restrictions
+❌ No purple or neon blue tones
+❌ No “AI SaaS” gradients or glowing effects
+❌ No overly abstract or robotic visuals
+Recommended Color Palette
+Base:
+Charcoal / deep black OR off-white / light beige
+Accents:
+Muted green (represents growth)
+Warm gray / soft gold
+Keep contrast sharp and professional
+Typography
+Modern, clean, and readable
+Strong hierarchy (bold headlines + minimal body text)
+3. Futuristic UI Elements (Subtle Use)
+Smooth scroll animations
+Hover effects on services
+Light glassmorphism (very minimal)
+Section transitions and layered layouts
+Grid-based alignment for a structured feel
+4. Images & Visual Content (Important)
+Use high-quality, real-world visuals related to services:
+Marketing dashboards
+Team collaboration
+Advertising visuals
+Analytics screens
+Business growth concepts
+Image Guidelines:
+Must look real and professional, not AI-generated
+Avoid overly stylized or fake-looking images
+Use consistent tone and color grading
+Support each service section with a relevant visual
+5. System Design (Reusability)
+Build the website in a way that it can be reused as a template for future agency projects
+Use modular sections (hero, services, testimonials, CTA, etc.)
+Ensure delivery speed of 5–7 days for similar projects
+6. Final Objective
+
+The final website should:
+
+Look like a premium digital marketing agency presence
+Clearly showcase services and results
+Feel modern and slightly futuristic, but still realistic and trustworthy
+Be strong enough to attract serious clients through LinkedIn
