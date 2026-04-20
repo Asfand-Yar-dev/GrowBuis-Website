@@ -1,5 +1,4 @@
 uploads = []
-outputs = []
 
 [[generated]]
 id = "-kbmD2-j1CjR6ANHWzzqW"
@@ -36,3 +35,21 @@ id = "y4T5xysr1QftjVmJUvkIu"
 uri = "file://artifacts/growbuis/src/assets/hero-split.png"
 type = "image"
 title = "generated_image"
+
+[[outputs]]
+id = "hJgTvLMFxJ2xqXmS-FQDe"
+uri = "file://screenshots/growbuis-home.jpg"
+type = "image"
+title = "1. Hero — Home Page"
+
+[[outputs]]
+id = "kxlLvSuitrLF9BPv0DFFX"
+uri = "file://screenshots/growbuis-services.jpg"
+type = "image"
+title = "2. Services — Analytics Dashboard"
+
+[[outputs]]
+id = "yA0xGRGwBmAsqYi6OvhPQ"
+uri = "file://screenshots/growbuis-about.jpg"
+type = "image"
+title = "3. About — Agency Story"
