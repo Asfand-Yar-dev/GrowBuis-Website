@@ -10,7 +10,7 @@ import { MessageCircle } from "lucide-react";
 export default function Contact() {
   return (
     <RootLayout>
-      <section className="py-20 lg:py-32">
+      <section className="py-20 lg:py-10">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <motion.div
@@ -18,7 +18,7 @@ export default function Contact() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-6">Initiate <br/>the conversation.</h1>
+              <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-6">Contact Us</h1>
               <p className="text-xl text-muted-foreground mb-10 max-w-md leading-relaxed">
                 Whether you need a complete acquisition overhaul or targeted strategic execution, we're ready to discuss your objectives.
               </p>
