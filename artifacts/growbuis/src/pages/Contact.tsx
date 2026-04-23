@@ -10,38 +10,38 @@ import { MessageCircle } from "lucide-react";
 export default function Contact() {
   return (
     <RootLayout>
-      <section className="py-20 lg:py-10">
+      <section className="py-8 sm:py-12">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-6">Contact Us</h1>
-              <p className="text-xl text-muted-foreground mb-10 max-w-md leading-relaxed">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4 sm:mb-6 text-center lg:text-left">Contact Us</h1>
+              <p className="text-base sm:text-xl text-muted-foreground mb-8 sm:mb-10 leading-relaxed text-center lg:text-left">
                 Whether you need a complete acquisition overhaul or targeted strategic execution, we're ready to discuss your objectives.
               </p>
 
-              <div className="space-y-8 mb-12">
+              <div className="space-y-6 sm:space-y-8 mb-10 sm:mb-12">
                 <div>
                   <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-2">Direct Inquiry</h4>
-                  <p className="text-lg font-medium">hello@growbuis.com</p>
+                  <p className="text-base sm:text-lg font-medium">hello@growbuis.com</p>
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-muted-foreground uppercase tracking-wider mb-2">Headquarters</h4>
-                  <p className="text-lg font-medium">100 Strategy Blvd, Suite 400<br/>New York, NY 10001</p>
+                  <p className="text-base sm:text-lg font-medium">100 Strategy Blvd, Suite 400<br/>New York, NY 10001</p>
                 </div>
               </div>
 
-              <div className="p-6 bg-card border border-border rounded-xl max-w-sm">
+              <div className="p-5 sm:p-6 bg-card border border-border rounded-xl">
                 <h4 className="font-bold mb-2">Prefer instant communication?</h4>
                 <p className="text-sm text-muted-foreground mb-4">Connect directly with our strategy team via WhatsApp for a rapid response.</p>
-                <a 
-                  href="https://wa.me/message/placeholder" 
-                  target="_blank" 
+                <a
+                  href="https://wa.me/message/placeholder"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center h-12 px-6 rounded-md bg-[#25D366] hover:bg-[#20bd5a] text-white font-medium transition-colors w-full sm:w-auto"
+                  className="inline-flex items-center justify-center h-11 sm:h-12 px-6 rounded-md bg-[#25D366] hover:bg-[#20bd5a] text-white font-medium transition-colors w-full sm:w-auto"
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
                   Chat on WhatsApp
@@ -50,15 +50,15 @@ export default function Contact() {
             </motion.div>
 
             <motion.div
-              className="bg-card p-8 md:p-10 rounded-2xl border border-border"
+              className="bg-card p-5 sm:p-8 md:p-10 rounded-2xl border border-border"
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h3 className="text-2xl font-bold mb-8">Request a Consultation</h3>
-              
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8">Request a Consultation</h3>
+
+              <form className="space-y-5 sm:space-y-6" onSubmit={(e) => e.preventDefault()}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="firstName">First Name</Label>
                     <Input id="firstName" placeholder="Marcus" className="bg-background" />
@@ -68,17 +68,17 @@ export default function Contact() {
                     <Input id="lastName" placeholder="Thorne" className="bg-background" />
                   </div>
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="email">Work Email</Label>
                   <Input id="email" type="email" placeholder="m.thorne@company.com" className="bg-background" />
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="company">Company</Label>
                   <Input id="company" placeholder="Acme Corp" className="bg-background" />
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label>Primary Interest</Label>
                   <Select>
@@ -95,17 +95,17 @@ export default function Contact() {
                     </SelectContent>
                   </Select>
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="message">How can we help?</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Briefly describe your current acquisition challenges or growth goals..." 
+                  <Textarea
+                    id="message"
+                    placeholder="Briefly describe your current acquisition challenges or growth goals..."
                     className="min-h-[120px] bg-background"
                   />
                 </div>
-                
-                <Button size="lg" className="w-full h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-medium">
+
+                <Button size="lg" className="w-full h-11 sm:h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-medium">
                   Submit Inquiry
                 </Button>
               </form>

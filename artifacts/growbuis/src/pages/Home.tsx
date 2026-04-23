@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <RootLayout>
       {/* Hero Section — Split Layout */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[90vh] flex flex-col lg:flex-row lg:items-center overflow-hidden">
 
         {/* Right-side image panel — absolutely positioned, fills right half */}
         <div className="absolute top-0 right-0 w-1/2 h-full hidden lg:block">
@@ -19,15 +19,13 @@ export default function Home() {
             alt="Digital marketing agency workspace"
             className="w-full h-full object-cover object-center"
           />
-          {/* Blend the image into the background on the left edge */}
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/20 to-transparent" />
-          {/* Subtle dark overlay to keep it premium */}
           <div className="absolute inset-0 bg-background/25" />
         </div>
 
         {/* Content — left side */}
-        <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10 py-10">
-          <div className="max-w-2xl">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10 pt-6 pb-4 lg:py-8">
+          <div className="max-w-2xl text-center lg:text-left mx-auto lg:mx-0">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -38,12 +36,12 @@ export default function Home() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
                 </span>
-                <span className="text-sm font-medium">Accepting new clients for Q3</span>
+                <span className="text-xs sm:text-sm font-medium">Accepting new clients for Q3</span>
               </div>
             </motion.div>
 
             <motion.h1
-              className="text-5xl md:text-7xl font-bold tracking-tight text-foreground mb-8 leading-[1.08]"
+              className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-foreground mb-6 sm:mb-8 leading-[1.08]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -56,7 +54,7 @@ export default function Home() {
             </motion.h1>
 
             <motion.p
-              className="text-xl text-muted-foreground mb-10 leading-relaxed"
+              className="text-base sm:text-xl text-muted-foreground mb-8 sm:mb-10 leading-relaxed"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -65,7 +63,7 @@ export default function Home() {
             </motion.p>
 
             <motion.div
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
@@ -73,7 +71,7 @@ export default function Home() {
               <Link href="/contact">
                 <Button
                   size="lg"
-                  className="w-full sm:w-auto h-14 px-8 text-base font-medium bg-primary hover:bg-primary/90 text-primary-foreground group"
+                  className="w-full sm:w-auto h-12 sm:h-14 px-6 sm:px-8 text-sm sm:text-base font-medium bg-primary hover:bg-primary/90 text-primary-foreground group"
                 >
                   Book a Consultation
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -83,7 +81,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto h-14 px-8 text-base font-medium border-border hover:bg-muted"
+                  className="w-full sm:w-auto h-12 sm:h-14 px-6 sm:px-8 text-sm sm:text-base font-medium border-border hover:bg-muted"
                 >
                   View Our Results
                 </Button>
@@ -92,7 +90,7 @@ export default function Home() {
 
             {/* Key stats row */}
             <motion.div
-              className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-border"
+              className="mt-12 sm:mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-8 sm:pt-10 border-t border-border"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
@@ -104,8 +102,8 @@ export default function Home() {
                 { value: "98%", label: "Retention Rate" },
               ].map((stat, i) => (
                 <div key={i}>
-                  <div className="text-3xl font-bold text-foreground mb-1">{stat.value}</div>
-                  <div className="text-sm font-medium text-muted-foreground">{stat.label}</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-foreground mb-1">{stat.value}</div>
+                  <div className="text-xs sm:text-sm font-medium text-muted-foreground">{stat.label}</div>
                 </div>
               ))}
             </motion.div>
@@ -114,7 +112,7 @@ export default function Home() {
 
         {/* Mobile image — shows below text on small screens */}
         <div className="lg:hidden w-full px-4 pb-12">
-          <div className="rounded-2xl overflow-hidden border border-border" style={{ height: 260 }}>
+          <div className="rounded-2xl overflow-hidden border border-border h-[220px] sm:h-[280px]">
             <img
               src={heroSplit}
               alt="Digital marketing agency workspace"
@@ -125,25 +123,25 @@ export default function Home() {
       </section>
 
       {/* Services Preview Section */}
-      <section className="py-24 bg-card/50">
+      <section className="py-10 sm:py-16 bg-card/50">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-16 gap-6 sm:gap-8">
             <div className="max-w-2xl">
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight mb-4 sm:mb-6">
                 Capabilities designed for dominance.
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-base sm:text-lg text-muted-foreground">
                 We focus exclusively on high-leverage digital strategies that create measurable business impact.
               </p>
             </div>
             <Link href="/services">
-              <Button variant="outline" className="h-12 px-6 border-primary/20 text-primary hover:bg-primary/10">
+              <Button variant="outline" className="h-11 sm:h-12 px-5 sm:px-6 border-primary/20 text-primary hover:bg-primary/10 whitespace-nowrap">
                 Explore All Services
               </Button>
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             {[
               {
                 icon: <Target className="h-6 w-6 text-secondary" />,
@@ -163,17 +161,17 @@ export default function Home() {
             ].map((service, i) => (
               <motion.div
                 key={i}
-                className="p-8 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors"
+                className="p-6 sm:p-8 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
               >
-                <div className="w-12 h-12 rounded-lg bg-background flex items-center justify-center mb-6 border border-border">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-background flex items-center justify-center mb-4 sm:mb-6 border border-border">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                <p className="text-muted-foreground">{service.desc}</p>
+                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">{service.title}</h3>
+                <p className="text-sm sm:text-base text-muted-foreground">{service.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -181,23 +179,23 @@ export default function Home() {
       </section>
 
       {/* Trust & Methodology Section */}
-      <section className="py-24 relative">
+      <section className="py-10 sm:py-16 relative">
         <div className="container mx-auto px-4 md:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight mb-4 sm:mb-6">
                 Our methodology is our unfair advantage.
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8">
                 We don't do "spray and pray." Every campaign we launch is backed by rigorous data modeling, market research, and continuous testing protocols.
               </p>
 
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 {[
                   "Deep-dive business audits before any ad spend",
                   "Cross-channel attribution modeling",
@@ -206,14 +204,14 @@ export default function Home() {
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="font-medium">{item}</span>
+                    <span className="text-sm sm:text-base font-medium">{item}</span>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-10">
+              <div className="mt-8 sm:mt-10">
                 <Link href="/about">
-                  <Button className="h-12 px-6 font-medium">Read Our Story</Button>
+                  <Button className="h-11 sm:h-12 px-5 sm:px-6 font-medium">Read Our Story</Button>
                 </Link>
               </div>
             </motion.div>
@@ -232,12 +230,12 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/30 to-transparent"></div>
 
-              <div className="relative z-10 p-8 glassmorphism bg-background/60 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl max-w-sm w-full mx-auto">
-                <div className="flex items-center justify-between mb-6">
-                  <div className="font-display font-semibold">Q3 Growth Trajectory</div>
+              <div className="relative z-10 p-5 sm:p-8 glassmorphism bg-background/60 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl max-w-xs sm:max-w-sm w-full mx-4 sm:mx-auto">
+                <div className="flex items-center justify-between mb-4 sm:mb-6">
+                  <div className="font-display font-semibold text-sm sm:text-base">Q3 Growth Trajectory</div>
                   <TrendingUp className="h-5 w-5 text-primary" />
                 </div>
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   <div className="space-y-2">
                     <div className="flex justify-between text-sm">
                       <span className="text-muted-foreground">Revenue</span>
@@ -264,16 +262,16 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-card border-t border-border">
+      <section className="py-10 sm:py-16 bg-card border-t border-border">
         <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center max-w-3xl">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">Ready to scale seriously?</h2>
-          <p className="text-xl text-muted-foreground mb-10">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight mb-4 sm:mb-6">Ready to scale seriously?</h2>
+          <p className="text-base sm:text-xl text-muted-foreground mb-8 sm:mb-10">
             Let's discuss your business objectives and how our methodology can help you achieve them.
           </p>
           <Link href="/contact">
             <Button
               size="lg"
-              className="h-14 px-10 text-lg font-medium bg-primary hover:bg-primary/90 text-primary-foreground"
+              className="h-12 sm:h-14 px-7 sm:px-10 text-base sm:text-lg font-medium bg-primary hover:bg-primary/90 text-primary-foreground w-full sm:w-auto"
             >
               Book Your Strategy Session
             </Button>
